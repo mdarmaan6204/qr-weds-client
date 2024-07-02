@@ -5,10 +5,12 @@ const QRSection = () => {
   return (
     <div className="p-2">
       <div>
-        <p className="text-center text-3xl font-bold bg-clip-text text-transparent  bg-gradient-to-r from-pink-500 to-violet-500">
+        <div className="text-center">
+        <p className="mt-4 text-5xl font-bold bg-gradient-to-r from-purple-400 via-yellow-400 to-sky-400 inline-block text-transparent bg-clip-text ">
           QR DESIGN
         </p>
-        <QRList qrDetails = {qrDetails} />
+        </div>
+        <QRList qrDetails={qrDetails} />
       </div>
     </div>
   );

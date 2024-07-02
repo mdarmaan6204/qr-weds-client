@@ -155,3 +155,97 @@ export const qrDetails = [
     cat: "Nature",
   },
 ];
+
+export const serviceDetails = [
+  {
+    id: 2000,
+    title: "Sweet",
+    price: "₹ 1",
+    path: "/Images/Service/Courier.jpg",
+    des: "This card is for this this this",
+    cat: "Nature",
+  },
+  {
+    id: 2001,
+    title: "Sweet",
+    price: "₹ 1",
+    path: "/Images/Service/fLOWER.webp",
+    des: "This card is for this this this",
+    cat: "Nature",
+  },
+  {
+    id: 2002,
+    title: "Sweet",
+    price: "₹ 1",
+    path: "/Images/Service/PHOTOGRAPHY.png",
+    des: "This card is for this this this",
+    cat: "Nature",
+  },
+  {
+    id: 2003,
+    title: "Sweet",
+    price: "₹ 1",
+    path: "/Images/Service/qr.png",
+    des: "This card is for this this this",
+    cat: "Nature",
+  },
+  {
+    id: 2004,
+    title: "Sweet",
+    price: "₹ 1",
+    path: "/Images/Service/hotel.jpg",
+    des: "This card is for this this this",
+    cat: "Nature",
+  },
+];
+
+export const videoDetails = [
+  {
+    id: 1000,
+    title: "Sweet",
+    price: "₹ 1",
+    path: "/Images/Video/VIDEO1.png",
+    des: "This card is for this this this",
+    cat: "Nature",
+  },
+  {
+    id: 1001,
+    title: "Sweet",
+    price: "₹ 1",
+    path: "/Images/Video/VIDEO2.png",
+    des: "This card is for this this this",
+    cat: "Nature",
+  },
+  {
+    id: 1002,
+    title: "Sweet",
+    price: "₹ 1",
+    path: "/Images/Video/VIDEO3.png",
+    des: "This card is for this this this",
+    cat: "Nature",
+  },
+  {
+    id: 1003,
+    title: "Sweet",
+    price: "₹ 1",
+    path: "/Images/Video/VIDEO4.png",
+    des: "This card is for this this this",
+    cat: "Nature",
+  },
+  {
+    id: 1004,
+    title: "Sweet",
+    price: "₹ 1",
+    path: "/Images/Video/VIDEO5.png",
+    des: "This card is for this this this",
+    cat: "Nature",
+  },
+  {
+    id: 1005,
+    title: "Sweet",
+    price: "₹ 1",
+    path: "/Images/Video/VIDEO6.png",
+    des: "This card is for this this this",
+    cat: "Nature",
+  },
+];

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { qrDetails } from "../utils";
 const HomeQR = () => {
   return (
-    <div className="mb-8">
+    <div className="pb-8">
       <div className="text-center">
         <p className="my-4 text-5xl font-bold bg-gradient-to-r from-purple-400 via-yellow-400 to-sky-400 inline-block text-transparent bg-clip-text ">
           QR DESIGN

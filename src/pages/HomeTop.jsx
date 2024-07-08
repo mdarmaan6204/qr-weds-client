@@ -1,9 +1,10 @@
-import LANDING_IMG from "../../public/Images/finalimage.jpg";
+import { useState } from "react";
+import LANDING_IMG from "/Images/finalimage.jpg";
 const HomeTop = () => {
   return (
-    <div>
+    <div className="flex justify-center bg-inherit">
       <img
-      className="w-full"
+      className="w-[80%] h-lvh"
        src={LANDING_IMG}></img>
     </div>
   );

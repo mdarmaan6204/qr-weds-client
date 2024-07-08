@@ -1,8 +1,11 @@
 import CardList from "./CardList";
 import {cardsDetails} from "../utils";
+import { ThemeContext } from "../App";
+import { useContext } from "react";
 
 
 const CardSection = () => {
+  const theme = useContext(ThemeContext);
   return (
     <div className="p-2 ">
       <div>

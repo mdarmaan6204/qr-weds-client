@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { ThemeContext } from "../App";
 
 const Footer = () => {
-  const theme = useContext(ThemeContext)
+  const theme = useContext(ThemeContext);
   return (
-    <div data-theme = {theme} >
+    <div data-theme={theme}>
       <footer className="footer bg-base-200 text-base-content p-10">
         <aside>
           <svg
@@ -34,9 +34,16 @@ const Footer = () => {
         </nav>
         <nav>
           <h6 className="footer-title">Company</h6>
-          <a className="link link-hover">About us</a>
-          <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Jobs</a>
+          <Link to="/about">
+            <a className="link link-hover">About us</a>
+          </Link>
+          <Link to="/contact">
+            <a className="link link-hover">Contact</a>
+          </Link>
+
+          <Link to="faq">
+            <a className="link link-hover">FAQ</a>
+          </Link>
           <a className="link link-hover">Press kit</a>
         </nav>
         <nav>

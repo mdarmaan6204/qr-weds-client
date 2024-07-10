@@ -26,7 +26,7 @@ const [theme, setTheme] = useState("light");
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/faq" element={<FAQ />} />
-          <Route path="/contactUs" element={<Contact />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/videos" element={<VideoSection />} />
           <Route path="/photography" element={<Photography />} />
           <Route path="/cards" element={<CardSection />} />

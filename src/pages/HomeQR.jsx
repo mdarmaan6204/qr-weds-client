@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { qrDetails } from "../utils";
+import { QRDetails } from "../utils";
 const HomeQR = () => {
   return (
     <div className="pb-8">
@@ -9,7 +9,7 @@ const HomeQR = () => {
         </p>
       </div>
       <div className="shadow-inner rounded-lg w-10/12 h-[20rem] mx-auto flex overflow-x-scroll no-scrollbar">
-        {qrDetails.map((qr) => (
+        {QRDetails.map((qr) => (
           <img
             className="h-[18rem] my-auto rounded-lg shadow-lg mx-2 hover:scale-[110%] duration-700"
             key={qr.id}

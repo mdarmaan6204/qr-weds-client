@@ -35,8 +35,6 @@ const [theme, setTheme] = useState("light");
           <Route path="/login" element={<Login />} />
           <Route path="/logout" element={<Logout />} />
           <Route path="/service" element={<Service />} />
-          {/* <Route path="/vid" element={<Logout />} /> */}
-
           <Route path="*" element={<Error />} />
         </Routes>
         <Footer />

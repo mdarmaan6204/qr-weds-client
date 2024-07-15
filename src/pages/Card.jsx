@@ -1,4 +1,3 @@
-import { Button, Carousel } from "@material-tailwind/react";
 const Card = ({ info }) => {
   return (
     // <div className="flex md:w-1/5 md:mx-4 mx-2 my-4  md:my-10 w-5/12 group hover:scale-105 duration-1000 py-1 h-[12rem] md:h-[30rem]">
@@ -65,7 +64,7 @@ const Card = ({ info }) => {
     //   />
     // </Carousel>
     // </div>
-   <Button>Hello</Button>
+    <div></div>
   );
 };
 

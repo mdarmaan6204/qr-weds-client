@@ -2,20 +2,21 @@ import { Link } from "react-router-dom";
 import LOGO from "/Images/LOGO.png";
 import { useContext } from "react";
 import { ThemeContext } from "../App";
+import { useAuth } from "../auth";
 
+const Header = ({ setTheme }) => {
+  const theme = useContext(ThemeContext);
+  const { isLoggedIn, user, isLoading } = useAuth();
 
-
-const Header = ({setTheme}) => {
- const theme = useContext(ThemeContext);
   return (
-    <div data-theme = {theme} className="">
+    <div data-theme={theme} className="">
       <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="h-6 w-6 stroke-[4px]"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -49,7 +50,15 @@ const Header = ({setTheme}) => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">QR WEDS</a>
+          <Link to="/">
+          <div className="flex">
+            <img src={LOGO} className="h-12"></img>
+            <p  className="btn md:block hidden btn-ghost text-2xl font-serif">
+              QR WEDS
+            </p>
+          </div>
+          </Link>
+          
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -76,8 +85,8 @@ const Header = ({setTheme}) => {
               type="checkbox"
               className="theme-controller"
               value="synthwave"
-              onClick={()=> setTheme( theme  === "light" ? "dark" : "light")}
-            /> 
+              onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+            />
             {/* sun icon */}
             <svg
               className="swap-off h-10 w-10 fill-current "
@@ -95,7 +104,21 @@ const Header = ({setTheme}) => {
               <path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
             </svg>
           </label>
-          <a className="btn">LOGIN</a>
+          {isLoggedIn ? (
+            <Link
+              to="/logout"
+              className="btn text-white hover:bg-blue-700 hover:scale-105 bg-blue-600 duration-300 "
+            >
+              Logout
+            </Link>
+          ) : (
+            <Link
+              to="/register"
+              className="btn text-white hover:bg-blue-700 hover:scale-105 bg-blue-600 duration-300 "
+            >
+              Login/Register
+            </Link>
+          )}
         </div>
       </div>
     </div>

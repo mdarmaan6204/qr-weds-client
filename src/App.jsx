@@ -9,11 +9,11 @@ import CardSection from "./pages/CardSection";
 import Photography from "./pages/Photography";
 import QRSection from "./pages/QRSection";
 import Home from "./pages/Home";
-import Login from "./Login";
-import Register from "./Register";
-import Logout from "./Logout";
-import { createContext, useEffect, useState } from "react";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Logout from "./pages/Logout";
 import Service from "./pages/Service";
+import { createContext, useEffect, useState } from "react";
 
 export const ThemeContext = createContext("light");
 const App = () => {

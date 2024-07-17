@@ -1,16 +1,11 @@
 import CardList from "./CardList";
-import {cardsDetails} from "../utils";
-import { ThemeContext } from "../App";
-import { useContext } from "react";
-
 
 const CardSection = () => {
-  const theme = useContext(ThemeContext);
   return (
     <div className="p-2 ">
       <div>
         <p className="text-3xl font-bold text-center">WEDDING CARDS</p>
-        <CardList  cardsDetails={cardsDetails} />
+        <CardList />
       </div>
     </div>
   );

@@ -14,6 +14,7 @@ import Register from "./pages/Register";
 import Logout from "./pages/Logout";
 import Service from "./pages/Service";
 import { createContext, useEffect, useState } from "react";
+import Error from "./pages/Error";
 
 export const ThemeContext = createContext("light");
 const App = () => {

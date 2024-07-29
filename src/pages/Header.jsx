@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import LOGO from "/Images/LOGO.png";
+import LOGO from "/LOGO.png";
 import { useContext } from "react";
 import { ThemeContext } from "../App";
 import { useAuth } from "../auth";
@@ -53,7 +53,7 @@ const Header = ({ setTheme }) => {
           <Link to="/">
           <div className="flex">
             <img src={LOGO} className="h-12"></img>
-            <p  className="btn md:block hidden btn-ghost text-2xl font-serif">
+            <p  className="btn md:block hidden md:pt-2  btn-ghost text-2xl font-serif">
               QR WEDS
             </p>
           </div>

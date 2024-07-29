@@ -10,6 +10,9 @@ const Login = () => {
     password: "",
   });
 
+  const { isLoggedIn,  isLoading } = useAuth();
+
+
   const navigate = useNavigate();
   const { setLogin , storeTokenInLS, API } = useAuth();
   const URL = `${API}/api/auth/login`;

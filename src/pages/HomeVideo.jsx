@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { videoDetails } from "../utils";
+import { videoThumbnailDetails } from "../utils";
 const HomeVideo = () => {
   return (
     <div className="mb-8">
@@ -9,7 +9,7 @@ const HomeVideo = () => {
         </p>
       </div>
       <div className="shadow-inner rounded-lg w-10/12 h-[20rem] mx-auto flex overflow-x-scroll no-scrollbar">
-        {videoDetails.map((vid) => (
+        {videoThumbnailDetails.map((vid) => (
           <img
             className="h-[18rem] w-[20rem] my-auto rounded-lg shadow-lg mx-2 hover:scale-[110%] duration-700"
             key={vid.id}

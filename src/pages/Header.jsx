@@ -6,7 +6,7 @@ import { useAuth } from "../auth";
 
 const Header = ({ setTheme }) => {
   const theme = useContext(ThemeContext);
-  const { isLoggedIn, user, isLoading } = useAuth();
+  const { isLoggedIn } = useAuth();
 
   return (
     <div data-theme={theme} className="">
@@ -48,17 +48,22 @@ const Header = ({ setTheme }) => {
               <li>
                 <Link to="/photography">PHOTOGRAPHY</Link>
               </li>
+              <li>
+                <Link to="/contact">CONTACT US</Link>
+              </li>
+              <li>
+                <Link to="/admin">ADMIN</Link>
+              </li>
             </ul>
           </div>
           <Link to="/">
-          <div className="flex">
-            <img src={LOGO} className="h-12"></img>
-            <p  className="btn md:block hidden md:pt-2  btn-ghost text-2xl font-serif">
-              QR WEDS
-            </p>
-          </div>
+            <div className="flex">
+              <img src={LOGO} className="h-12"></img>
+              <p className="btn md:block hidden md:pt-2  btn-ghost text-2xl font-serif">
+                QR WEDS
+              </p>
+            </div>
           </Link>
-          
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -77,6 +82,12 @@ const Header = ({ setTheme }) => {
             <li>
               <Link to="/photography">PHOTOGRAPHY</Link>
             </li>
+            <li>
+              <Link to="/contact">CONTACT US</Link>
+            </li>
+            <li>
+                <Link to="/admin">ADMIN</Link>
+              </li>
           </ul>
         </div>
         <div className="navbar-end">

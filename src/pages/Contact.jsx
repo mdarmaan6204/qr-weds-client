@@ -54,86 +54,55 @@ const Contact = () => {
       [name]: value,
     });
   };
-
   return (
-    // <div className="bg-blue-50 py-6">
-    //   <div className="flex">
-    //     <form
-    //       onSubmit={handleContactForm}
-    //       className="w-5/6 border-4 md:w-1/2 p-12 right-0 left-0 bg-white mx-auto my-10 rounded-lg"
-    //     >
-    //       <p className="font-bold text-xl">GET IN TOUCH</p>
-    //       <input
-    //         type="text"
-    //         name="username"
-    //         id="username"
-    //         autoComplete="off"
-    //         className="p-2 my-4 w-full bg-slate-100 border-2 border-black rounded-lg"
-    //         placeholder="Your Name*"
-    //         onChange={handleInput}
-    //         value={data.username}
-    //         required
-    //       />
-    //       <input
-    //         type="text"
-    //         name="phone"
-    //         id="phone"
-    //         className="p-2 my-4 w-full bg-slate-100 border-2 border-black rounded-lg"
-    //         placeholder="Phone no.*"
-    //         onChange={handleInput}
-    //         value={data.phone}
-    //         required
-    //       />
-    //       <textarea
-    //         className="p-2 my-4 w-full bg-slate-100 border-2 border-black rounded-lg"
-    //         placeholder="Description"
-    //         name="message"
-    //         id="message"
-    //         autoComplete="off"
-    //         onChange={handleInput}
-    //         value={data.message}
-    //         cols="30"
-    //         rows="6"
-    //       ></textarea>
-    //       <button className="ml-64 bg-blue-800 font-bold text-white w-2/12 h-8 rounded-3xl">
-    //         Submit
-    //       </button>
-    //     </form>
-    //   </div>
-    // </div>
-    <div className="dark ">
-      <section className=" dark relative z-10 overflow-hidden bg-white dark:bg-dark py-10 lg:py-[60px] mx-auto">
+    <div className="px-1">
+      <div className="text-center">
+        <span className="mb-2 block text-base font-semibold text-primary">
+          Contact Us
+        </span>
+        <h2 className="mb-2 text-[32px] font-bold uppercase text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]">
+          GET IN TOUCH WITH US
+        </h2>
+      </div>
+      <section className="relative z-10 overflow-hidden bg-white dark:bg-dark  lg:py-[40px] mx-auto">
         <div className="container ">
-          <div className="flex  -mx-4 lg:justify-between">
-            <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
-              <div className="relative p-8 bg-white rounded-lg shadow-lg dark:bg-dark-2 sm:p-12">
-                <form>
+          <div className="flex justify-center ">
+            <div className="w-full px-4 lg:w-1/2 xl:w-5/12  ">
+              <div className="relative p-8 bg-white rounded-lg shadow-xl dark:bg-dark-2 sm:p-12">
+                <form onSubmit={handleContactForm}>
                   <div className="mb-6">
                     <input
                       type="text"
+                      id = "username"
+                      name="username"
                       placeholder="Your Name"
                       className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
-                    />
-                  </div>
-                  <div className="mb-6">
-                    <input
-                      type="email"
-                      placeholder="Your Email"
-                      className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
-                    />
+                      onChange={handleInput}
+                      value={data.username}
+                      required
+                      />
                   </div>
                   <div className="mb-6">
                     <input
                       type="text"
+                      id="phone"
+                      name="phone"
                       placeholder="Your Phone"
                       className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
+                      onChange={handleInput}
+                      value={data.phone}
+                      required
                     />
                   </div>
                   <div className="mb-6">
                     <textarea
                       rows="6"
+                      id="message"
+                      name="message"
                       placeholder="Your Message"
                       className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none"
+                      onChange={handleInput}
+                      value={data.message}
                     ></textarea>
                   </div>
                   <div>

@@ -13,16 +13,20 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Logout from "./pages/Logout";
 import Service from "./pages/Service";
-import { createContext, useEffect, useState } from "react";
 import Error from "./pages/Error";
+import  AdminLayout  from "./pages/AdminLayout";
+import  AdminUsers  from "./pages/AdminUsers";
+import  AdminContacts  from "./pages/AdminContacts";
+import  AdminUpdate  from "./pages/AdminUpdate";
+import { createContext, useEffect, useState } from "react";
 
 export const ThemeContext = createContext("light");
 const App = () => {
-const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("light");
   return (
-    <Router >
+    <Router>
       <ThemeContext.Provider value={theme}>
-        <Header  setTheme = {setTheme} />
+        <Header setTheme={setTheme} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -37,6 +41,11 @@ const [theme, setTheme] = useState("light");
           <Route path="/logout" element={<Logout />} />
           <Route path="/service" element={<Service />} />
           <Route path="*" element={<Error />} />
+          <Route path="/admin" element={<AdminLayout />}>
+            <Route path="users" element={<AdminUsers />} />
+            <Route path="contacts" element={<AdminContacts />} />
+            <Route path="users/:id/edit" element={<AdminUpdate />} />
+          </Route>
         </Routes>
         <Footer />
       </ThemeContext.Provider>

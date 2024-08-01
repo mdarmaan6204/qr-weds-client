@@ -6,7 +6,10 @@ import { useAuth } from "../auth";
 
 const Header = ({ setTheme }) => {
   const theme = useContext(ThemeContext);
-  const { isLoggedIn } = useAuth();
+  const { isLoggedIn, user, isLoading } = useAuth();
+  if (isLoading) {
+    return <h1>Loading ...</h1>;
+  }
 
   return (
     <div data-theme={theme} className="">
@@ -51,9 +54,11 @@ const Header = ({ setTheme }) => {
               <li>
                 <Link to="/contact">CONTACT US</Link>
               </li>
-              <li>
-                <Link to="/admin">ADMIN</Link>
-              </li>
+              {user?.isAdmin && (
+                <li>
+                  <Link to="/admin"> ADMIN </Link>
+                </li>
+              )}
             </ul>
           </div>
           <Link to="/">
@@ -85,9 +90,11 @@ const Header = ({ setTheme }) => {
             <li>
               <Link to="/contact">CONTACT US</Link>
             </li>
-            <li>
-                <Link to="/admin">ADMIN</Link>
+            {user?.isAdmin && (
+              <li>
+                <Link to="/admin"> ADMIN </Link>
               </li>
+            )}
           </ul>
         </div>
         <div className="navbar-end">
@@ -116,12 +123,14 @@ const Header = ({ setTheme }) => {
             </svg>
           </label>
           {isLoggedIn ? (
-            <Link
-              to="/logout"
-              className="btn text-white hover:bg-blue-700 hover:scale-105 bg-blue-600 duration-300 "
-            >
-              Logout
-            </Link>
+            <>
+              <Link
+                to="/logout"
+                className="btn text-white hover:bg-blue-700 hover:scale-105 bg-blue-600 duration-300 "
+              >
+                Logout
+              </Link>
+            </>
           ) : (
             <Link
               to="/register"

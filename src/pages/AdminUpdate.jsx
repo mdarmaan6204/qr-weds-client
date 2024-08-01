@@ -4,7 +4,7 @@ import {useParams} from "react-router-dom";
 import {useAuth} from "../auth";
 import {toast} from "react-toastify";
 
-export const AdminUpdate = () => {
+const AdminUpdate = () => {
     const [data, setData] = useState({
         username: "",
         phone: "",
@@ -130,3 +130,5 @@ export const AdminUpdate = () => {
     </section>
   );
 };
+
+export default AdminUpdate;

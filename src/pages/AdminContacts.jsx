@@ -50,40 +50,55 @@ const AdminContacts = () => {
   }, []);
 
   return (
-    <>
-      <section className="admin-contacts-section">
-        <p className="text-6xl font-bold text- white">Admin Contact Data</p>
-
-        <div className="bg-white my-4 rounded-lg text-black w-full">
-          <div className=" text-xl font-serif  border-b-4 border-slate-600 w-full">
-            <tr className="flex justify-between px-4 py-2">
-              <th className="py-2">Name</th>
-              <th className="py-2">Phone</th>
-              <th className="py-2">Message</th>
-              <th className="py-2">Delete</th>
+    <div className="w-full">
+      <div className="relative overflow-x-auto shadow-md sm:rounded-lg  ">
+        <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+          <thead className="text-lg text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+              <th scope="col" className="px-6 py-3">
+                NAME
+              </th>
+              <th scope="col" className="px-6 py-3">
+                MOBILE NO.
+              </th>
+              <th scope="col" className="px-6 py-3">
+                EDIT
+              </th>
+              <th scope="col" className="px-6 py-3">
+                DELETE
+              </th>
             </tr>
-          </div>
-          <div>
+          </thead>
+          <tbody>
             {contactData.map((curContactData, index) => {
-              const { username, phone, message, _id } = curContactData;
               return (
-                <div className=" flex justify-between my-4 font-mono" key={index}>
-                  <p className="px-4 py-2">{username}</p>
-                  <p className="px-4 py-2">{phone}</p>
-                  <p className="px-4  py-2">{message}</p>
-                  <button
-                      className="mr-4 bg-red-600 w-[6rem] text-white border-2 rounded-lg p-1"
-                      onClick={() => deleteContactById(_id)}
+                <tr
+                  key={index}
+                  className="bg-white border-b hover:bg-slate-200 dark:bg-gray-800 dark:border-gray-700"
+                >
+                  <th
+                    scope="row"
+                    className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
                   >
-                    Delete
-                  </button>
-                </div>
+                    {curContactData?.username}
+                  </th>
+                  <td className="px-6 py-4">{curContactData?.phone}</td>
+                  <td className="px-6 py-4">{curContactData?.message}</td>
+                  <td className="px-6 py-4">
+                    <button
+                      onClick={() => deleteContactById(curContactData?._id)}
+                      className="font-medium  text-red-600 dark:text-red-500 hover:underline"
+                    >
+                      Delete
+                    </button>
+                  </td>
+                </tr>
               );
             })}
-          </div>
-        </div>
-      </section>
-    </>
+          </tbody>
+        </table>
+      </div>
+    </div>
   );
 };
 

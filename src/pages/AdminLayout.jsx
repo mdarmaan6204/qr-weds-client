@@ -16,33 +16,31 @@ const AdminLayout = () => {
   }
 
   return (
-    <div className="flex justify-between bg-blue-50 ">
-      <div className="w-2/12 border-4 border-blue-400">
-        <div className="">
-          <div className="px-8 py-4 bg-black text-white">
-            <nav>
-              <ul className="flex flex-col justify-evenly h-[600px]">
-                <li className="pl-10">
+    <div className="flex justify-between ">
+      <div className="md:w-2/12 w-1/5 md:border-4 border-2 border-blue-400 ">
+          <div className="md:px-8 px-2 py-16   text-white relative bg-black h-[100%]">
+            <nav className="sticky top-0 left-0  text-white bg-black-500 ">
+              <ul className="flex flex-col justify-evenly items-center ">
+                <li className="mt-20 mb-10 -ml-2">
                   <NavLink to="/admin/users">
-                    <FaUser className="text-4xl" /> Users
+                    <FaUser className="text-4xl " /> Users
                   </NavLink>
                 </li>
-                <li className="pl-10">
+                <li className="my-10 ">
                   <NavLink to="/admin/contacts">
-                    <FaMessage className="text-4xl" /> Contacts{" "}
+                    <FaMessage className="text-4xl" /> Contacts
                   </NavLink>
                 </li>
-                <li className="pl-10">
+                <li className="my-10">
                   <NavLink to="/">
-                    <FaHome className="text-4xl" /> Home{" "}
+                    <FaHome className="text-4xl" /> Home
                   </NavLink>
                 </li>
               </ul>
             </nav>
           </div>
-        </div>
       </div>
-      <div className="w-10/12 px-16 bg-black  py-10 text-white border-4 border-blue-400">
+      <div className="md:w-10/12 w-[80%] md:px-16 px-1  bg-black  py-10 text-white md:border-4 border-2 border-blue-400">
         <Outlet />
       </div>
     </div>

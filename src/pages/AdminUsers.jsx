@@ -34,8 +34,6 @@ const AdminUsers = () => {
         },
       });
       const data = await response.json();
-      // console.log(users after delete: ${data});
-
       if (response.ok) {
         getAllUsersData();
       }
@@ -48,16 +46,16 @@ const AdminUsers = () => {
     getAllUsersData();
   }, []);
   return (
-    <>
-      <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+    <div>
+      <div className="relative overflow-x-scroll shadow-md sm:rounded-lg">
         <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-          <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+          <thead className="text-lg text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
               <th scope="col" className="px-6 py-3">
                 NAME
               </th>
               <th scope="col" className="px-6 py-3">
-                MOBILE NUMBER
+                MOBILE NO.
               </th>
               <th scope="col" className="px-6 py-3">
                 EDIT
@@ -70,21 +68,9 @@ const AdminUsers = () => {
           <tbody>
             {users.map((curUser, index) => {
               return (
-                // <tr key={index}>
-                //   <td>{curUser.username}</td>
-                //   <td>{curUser.phone}</td>
-                //   <td>
-                //     <Link to={"/admin/users/${curUser._id}/edit"}>Edit</Link>
-                //   </td>
-                //   <td>
-                //     <button onClick={() => deleteUser(curUser._id)}>
-                //       Delete
-                //     </button>
-                //   </td>
-                // </tr>
                 <tr
-                  key={curUser?.index}
-                  className="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+                  key={index}
+                  className="bg-white border-b hover:bg-slate-200 dark:bg-gray-800 dark:border-gray-700"
                 >
                   <th
                     scope="row"
@@ -93,7 +79,7 @@ const AdminUsers = () => {
                     {curUser?.username}
                   </th>
                   <td className="px-6 py-4">{curUser?.phone}</td>
-                  <td className="px-6 py-4">
+                  <td className="px-6 py-4 ">
                     <Link
                       to={"/admin/users/${curUser._id}/edit"}
                       className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
@@ -104,7 +90,7 @@ const AdminUsers = () => {
                   <td className="px-6 py-4">
                     <button
                       onClick={() => deleteUser(curUser._id)}
-                      className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                      className="font-medium  text-red-600 dark:text-red-500 hover:underline"
                     >
                       Delete
                     </button>
@@ -115,43 +101,7 @@ const AdminUsers = () => {
           </tbody>
         </table>
       </div>
-
-      <section className="admin-users-section">
-        <div className="container">
-          <h1>Admin Users Data</h1>
-        </div>
-        <div className="container admin-users">
-          <table>
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Phone</th>
-                <th>Update</th>
-                <th>Delete</th>
-              </tr>
-            </thead>
-            <tbody>
-              {users.map((curUser, index) => {
-                return (
-                  <tr key={index}>
-                    <td>{curUser.username}</td>
-                    <td>{curUser.phone}</td>
-                    <td>
-                      <Link to={"/admin/users/${curUser._id}/edit"}>Edit</Link>
-                    </td>
-                    <td>
-                      <button onClick={() => deleteUser(curUser._id)}>
-                        Delete
-                      </button>
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
-      </section>
-    </>
+    </div>
   );
 };
 

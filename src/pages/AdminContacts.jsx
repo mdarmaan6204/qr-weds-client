@@ -62,7 +62,7 @@ const AdminContacts = () => {
                 MOBILE NO.
               </th>
               <th scope="col" className="px-6 py-3">
-                EDIT
+                MESSAGE
               </th>
               <th scope="col" className="px-6 py-3">
                 DELETE

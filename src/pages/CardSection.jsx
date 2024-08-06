@@ -4,11 +4,13 @@ import CardList from "./CardList";
 const CardSection = () => {
   const [showCategory, setShowCategory] = useState("All");
   const [price, setPrice] = useState(10000);
-  const [applyFilter , setApplyFilter] = useState(false)
+  const [applyFilter, setApplyFilter] = useState(false);
   return (
     <div className="p-2 ">
-      <div>
-        <p className="text-3xl font-bold text-center py-4">WEDDING CARDS</p>
+      <div className="text-center">
+        <p className="mt-4  text-5xl font-bold bg-gradient-to-r from-red-400 via-blue-500 to-red-400 inline-block text-transparent bg-clip-text">
+          WEDDING CARDS
+        </p>
         <div className="flex md:px-20 px-2 justify-between md:w-3/4 py-2">
           <div className="flex mx-2">
             <label className="font-bold md:block hidden text-black text-lg md:text-2xl  my-auto mr-4">
@@ -37,13 +39,13 @@ const CardSection = () => {
               className="input input-bordered input-secondary w-full max-w-xs"
               onChange={(e) => setPrice(e.target.value)}
             />
-            {/* <button className="btn btn-outline btn-secondary md:ml-10 ml-2"
-            onClick={()=>setApplyFilter(true)}>
-              Search
-            </button> */}
           </div>
         </div>
-        <CardList showCategory={showCategory} price = {price} applyFilter = {applyFilter} />
+        <CardList
+          showCategory={showCategory}
+          price={price}
+          applyFilter={applyFilter}
+        />
       </div>
     </div>
   );

@@ -1606,8 +1606,8 @@ export const videoDetails = [
     cat: "Hindu",
     price: "20",
     des: "Come Celebrate This Special Occasion with Us!",
-    urlWithoutPlay: "https://www.youtube-nocookie.com/embed/vCBJd5Gzyxc?si=ilnWLgsOUWyUMgBr",
-    urlWithPlay: "https://www.youtube-nocookie.com/embed/vCBJd5Gzyxc?si=ilnWLgsOUWyUMgBr?autoplay=1&mute=0&cc_load_policy=1",
+    urlWithoutPlay: "https://www.youtube-nocookie.com/embed/vCBJd5Gzyxc",
+    urlWithPlay: "https://www.youtube-nocookie.com/embed/vCBJd5Gzyxc?autoplay=1&mute=0&cc_load_policy=1",
     ytID: "vCBJd5Gzyxc?si=ilnWLgsOUWyUMgBr",
   },
 
@@ -1672,8 +1672,8 @@ export const videoDetails = [
     cat: "Hindu",
     price: "20",
     des: "Create Unforgettable First Impressions with Our Invitation Videos!",
-    urlWithoutPlay: "https://www.youtube-nocookie.com/embed/AOPDn2zNxIs?si=BUSY9i5NKIILz_ko",
-    urlWithPlay: "https://www.youtube-nocookie.com/embed/AOPDn2zNxIs?si=BUSY9i5NKIILz_ko?autoplay=1&mute=0&cc_load_policy=1",
+    urlWithoutPlay: "https://www.youtube-nocookie.com/embed/AOPDn2zNxIs?",
+    urlWithPlay: "https://www.youtube-nocookie.com/embed/AOPDn2zNxIs?autoplay=1&mute=0&cc_load_policy=1",
     ytID: "AOPDn2zNxIs?si=BUSY9i5NKIILz_ko",
   },
 
@@ -1683,9 +1683,9 @@ export const videoDetails = [
     cat: "Hindu",
     price: "20",
     des: "Mark Your Calendar for an Event You Won't Want to Miss!",
-    urlWithoutPlay: "https://www.youtube-nocookie.com/embed/qrDRDbkKtS0?si=q_TDEn0DYwVfLZaU",
-    urlWithPlay: "https://www.youtube-nocookie.com/embed/qrDRDbkKtS0?si=q_TDEn0DYwVfLZaU?autoplay=1&mute=0&cc_load_policy=1",
-    ytID: "qrDRDbkKtS0?si=q_TDEn0DYwVfLZaU",
+    urlWithoutPlay: "https://www.youtube-nocookie.com/embed/qrDRDbkKtS0",
+    urlWithPlay: "https://www.youtube-nocookie.com/embed/qrDRDbkKtS0?autoplay=1&mute=0&cc_load_policy=1",
+    ytID: "qrDRDbkKtS0",
   },
 
   {
@@ -1694,9 +1694,9 @@ export const videoDetails = [
     cat: "Hindu",
     price: "20",
     des: "Captivate Your Guests with Beautiful Invitation Videos!",
-    urlWithoutPlay: "https://www.youtube-nocookie.com/embed/Mladm2r8_5E?si=I-2ryuUsofEfzvYy",
-    urlWithPlay: "https://www.youtube-nocookie.com/embed/Mladm2r8_5E?si=I-2ryuUsofEfzvYy?autoplay=1&mute=0&cc_load_policy=1",
-    ytID: "Mladm2r8_5E?si=I-2ryuUsofEfzvYy",
+    urlWithoutPlay: "https://www.youtube-nocookie.com/embed/Mladm2r8_5E",
+    urlWithPlay: "https://www.youtube-nocookie.com/embed/Mladm2r8_5E?autoplay=1&mute=0&cc_load_policy=1",
+    ytID: "Mladm2r8_5E",
   },
 
   {
@@ -1705,9 +1705,9 @@ export const videoDetails = [
     cat: "Hindu",
     price: "20",
     des: "From Classic to Modern: Invitation Videos for Every Occasion!",
-    urlWithoutPlay: "https://www.youtube-nocookie.com/embed/0CeZXIwNvJU?si=WejAUba4_YRDX1XT",
-    urlWithPlay: "https://www.youtube-nocookie.com/embed/0CeZXIwNvJU?si=WejAUba4_YRDX1XT?autoplay=1&mute=0&cc_load_policy=1",
-    ytID: "0CeZXIwNvJU?si=WejAUba4_YRDX1XT",
+    urlWithoutPlay: "https://www.youtube-nocookie.com/embed/0CeZXIwNvJU?",
+    urlWithPlay: "https://www.youtube-nocookie.com/embed/0CeZXIwNvJU?autoplay=1&mute=0&cc_load_policy=1",
+    ytID: "0CeZXIwNvJU",
   },
 
   {
@@ -1716,9 +1716,9 @@ export const videoDetails = [
     cat: "Hindu",
     price: "20",
     des: "Invite in Style: Explore Our Diverse Video Invitations!",
-    urlWithoutPlay: "https://www.youtube-nocookie.com/embed/JmK1STnOEdQ?si=bOX9ZAs1VNaPBTEC",
-    urlWithPlay: "https://www.youtube-nocookie.com/embed/JmK1STnOEdQ?si=bOX9ZAs1VNaPBTEC?autoplay=1&mute=0&cc_load_policy=1",
-    ytID: "JmK1STnOEdQ?si=bOX9ZAs1VNaPBTEC",
+    urlWithoutPlay: "https://www.youtube-nocookie.com/embed/JmK1STnOEdQ",
+    urlWithPlay: "https://www.youtube-nocookie.com/embed/JmK1STnOEdQ?autoplay=1&mute=0&cc_load_policy=1",
+    ytID: "JmK1STnOEdQ",
   },
 
   {
@@ -1727,9 +1727,9 @@ export const videoDetails = [
     cat: "Muslim",
     price: "20",
     des: "Set the Tone with Creative and Elegant Invitation Videos!",
-    urlWithoutPlay: "https://www.youtube-nocookie.com/embed/Pg9wK671-w8?si=6LpZdzEX00FxJo6Z",
-    urlWithPlay: "https://www.youtube-nocookie.com/embed/Pg9wK671-w8?si=6LpZdzEX00FxJo6Z?autoplay=1&mute=0&cc_load_policy=1",
-    ytID: "Pg9wK671-w8?si=6LpZdzEX00FxJo6Z",
+    urlWithoutPlay: "https://www.youtube-nocookie.com/embed/Pg9wK671-w8",
+    urlWithPlay: "https://www.youtube-nocookie.com/embed/Pg9wK671-w8?autoplay=1&mute=0&cc_load_policy=1",
+    ytID: "Pg9wK671-w8",
   },
 
   {
@@ -1738,9 +1738,9 @@ export const videoDetails = [
     cat: "Hindu",
     price: "20",
     des: "Craft the Perfect Invite with Our Stunning Video Templates!",
-    urlWithoutPlay: "https://www.youtube-nocookie.com/embed/5qXczNx4OVg?si=H2epigmSv8kQ9Xd7",
-    urlWithPlay: "https://www.youtube-nocookie.com/embed/5qXczNx4OVg?si=H2epigmSv8kQ9Xd7?autoplay=1&mute=0&cc_load_policy=1",
-    ytID: "5qXczNx4OVg?si=H2epigmSv8kQ9Xd7",
+    urlWithoutPlay: "https://www.youtube-nocookie.com/embed/5qXczNx4OVg",
+    urlWithPlay: "https://www.youtube-nocookie.com/embed/5qXczNx4OVg?autoplay=1&mute=0&cc_load_policy=1",
+    ytID: "5qXczNx4OVg",
   },
 
   {
@@ -1749,9 +1749,9 @@ export const videoDetails = [
     cat: "Muslim",
     price: "20",
     des: "Transform Your Event with Unique Invitation Videos!",
-    urlWithoutPlay: "https://www.youtube-nocookie.com/embed/pFzk7o_UdrA?si=KR6bi44Lw1ZJKcMD",
-    urlWithPlay: "https://www.youtube-nocookie.com/embed/pFzk7o_UdrA?si=KR6bi44Lw1ZJKcMD?autoplay=1&mute=0&cc_load_policy=1",
-    ytID: "pFzk7o_UdrA?si=KR6bi44Lw1ZJKcMD",
+    urlWithoutPlay: "https://www.youtube-nocookie.com/embed/pFzk7o_UdrA",
+    urlWithPlay: "https://www.youtube-nocookie.com/embed/pFzk7o_UdrA?autoplay=1&mute=0&cc_load_policy=1",
+    ytID: "pFzk7o_UdrA",
   },
 
   {
@@ -1760,9 +1760,9 @@ export const videoDetails = [
     cat: "Hindu",
     price: "20",
     des: "Elevate Your Event with Personalized Invitation Videos!",
-    urlWithoutPlay: "https://www.youtube-nocookie.com/embed/1vaL4HGPfSQ?si=k9bkpR5bGaWYcMW4",
-    urlWithPlay: "https://www.youtube-nocookie.com/embed/1vaL4HGPfSQ?si=k9bkpR5bGaWYcMW4?autoplay=1&mute=0&cc_load_policy=1",
-    ytID: "1vaL4HGPfSQ?si=k9bkpR5bGaWYcMW4",
+    urlWithoutPlay: "https://www.youtube-nocookie.com/embed/1vaL4HGPfSQ",
+    urlWithPlay: "https://www.youtube-nocookie.com/embed/1vaL4HGPfSQ?autoplay=1&mute=0&cc_load_policy=1",
+    ytID: "1vaL4HGPfSQ",
   },
 ];
 
@@ -1813,6 +1813,34 @@ export const faq = [
     ans: "? Digital QR cards are delivered instantly via email. If you opt for physical cards, delivery times vary based on your location.",
   },
 ];
+
+export const menuOptions = [
+  {
+    opt: "HOME",
+    route: "/",
+  },
+  {
+    opt: "CARDS",
+    route: "/cards",
+  },
+  {
+    opt: "VIDEO",
+    route: "/videos",
+  },
+  {
+    opt: "QR DESIGN",
+    route: "/qr",
+  },
+  {
+    opt: "PHOTOGRAPHY",
+    route: "/photography",
+  },
+  {
+    opt: "CONTACT US",
+    route: "/contact",
+  },
+];
+
 
 export const hoverShadowColors = [
   " hover:shadow-purple-600",

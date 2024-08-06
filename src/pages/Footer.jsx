@@ -6,7 +6,7 @@ const Footer = () => {
   const theme = useContext(ThemeContext);
   return (
     <div data-theme={theme}>
-      <footer className="footer bg-base-200 text-base-content p-10">
+      <footer className="footer bg-[#ffe7e7] text-base-content p-10 ">
         <aside>
           <svg
             width="50"

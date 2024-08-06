@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { ThemeContext } from "../App";
 import { faq } from "../utils";
+import HomeFAQ from "./HomeFAQ";
 const FAQ = () => {
   const theme = useContext(ThemeContext);
 

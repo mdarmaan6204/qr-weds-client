@@ -33,7 +33,7 @@ const AdminUsers = () => {
           Authorization: authorizationToken,
         },
       });
-      const data = await response.json();
+      // const data = await response.json();
       if (response.ok) {
         getAllUsersData();
       }
@@ -49,7 +49,7 @@ const AdminUsers = () => {
     <div>
       <div className="relative overflow-x-scroll shadow-md sm:rounded-lg">
         <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-          <thead className="text-lg text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+          <thead className="text-lg w-full text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
               <th scope="col" className="px-6 py-3">
                 NAME
@@ -81,7 +81,7 @@ const AdminUsers = () => {
                   <td className="px-6 py-4">{curUser?.phone}</td>
                   <td className="px-6 py-4 ">
                     <Link
-                      to={"/admin/users/${curUser._id}/edit"}
+                      to={`/admin/users/${curUser._id}/edit`}
                       className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                     >
                       Edit

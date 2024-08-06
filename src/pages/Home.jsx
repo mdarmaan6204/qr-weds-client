@@ -4,6 +4,8 @@ import HomeService from "./HomeService"
 import HomeTop from "./HomeTop"
 import HomeVideo from "./HomeVideo"
 import { ThemeContext } from "../App"
+import FAQ from "./FAQ"
+import HomeFAQ from "./HomeFAQ"
 
 const Home = () => {
   const theme = useContext(ThemeContext)
@@ -13,6 +15,7 @@ const Home = () => {
       <HomeService/>
       <HomeVideo/>
       <HomeQR/>
+      <HomeFAQ count= {4}/>
     </div>
   )
 }

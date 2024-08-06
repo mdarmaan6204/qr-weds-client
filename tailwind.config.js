@@ -2,8 +2,13 @@
 import daisyui from "daisyui";
 export default {
   content: ["./src/**/*.{html,js,jsx}"],
+  darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      fontFamily :{ 
+        'pacifico' : ["Pacifico", "cursive"],
+      }
+    },
   },
   plugins: [daisyui],
   daisyui: {

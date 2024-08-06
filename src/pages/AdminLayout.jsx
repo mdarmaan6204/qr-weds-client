@@ -17,7 +17,7 @@ const AdminLayout = () => {
 
   return (
     <div className="flex justify-between ">
-      <div className="md:w-2/12 w-1/5 md:border-4 border-2 border-blue-400 ">
+      <div className="md:w-2/12 w-1/5 md:border-4 border-2 border-[#FF4E88] ">
           <div className="md:px-8 px-2 py-16   text-white relative bg-black h-[100%]">
             <nav className="sticky top-0 left-0  text-white bg-black-500 ">
               <ul className="flex flex-col justify-evenly items-center ">
@@ -40,7 +40,7 @@ const AdminLayout = () => {
             </nav>
           </div>
       </div>
-      <div className="md:w-10/12 w-[80%] md:px-16 px-1  bg-black  py-10 text-white md:border-4 border-2 border-blue-400">
+      <div className="md:w-10/12 w-[80%] md:px-16 px-1  bg-black  py-10 text-white md:border-4 border-2 border-[#FF4E88]">
         <Outlet />
       </div>
     </div>

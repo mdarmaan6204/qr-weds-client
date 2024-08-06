@@ -7,6 +7,8 @@ export default {
     extend: {
       fontFamily :{ 
         'pacifico' : ["Pacifico", "cursive"],
+        'silter' : ["Silter" , "cursive"],
+        'mofeital' : ["Mofeital" , "cursive"],
       }
     },
   },

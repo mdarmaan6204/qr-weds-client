@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import LOGO from "/LOGO.png";
 import { useContext, useState } from "react";
 import { ThemeContext } from "../App";
 import { useAuth } from "../auth";
 import { menuOptions } from "../utils";
 import Loading from "./Loading";
+import NavLogo from "./NavLogo";
 
 const Header = ({ setTheme }) => {
   const theme = useContext(ThemeContext);
@@ -22,10 +22,7 @@ const Header = ({ setTheme }) => {
             to="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img src={LOGO} className="h-8" alt="QR  Logo" />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap text-yellow-600 font-pacifico dark:text-white">
-              QR WEDS
-            </span>
+           <NavLogo/>
           </Link>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <div></div>

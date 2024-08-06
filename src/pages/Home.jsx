@@ -4,7 +4,6 @@ import HomeService from "./HomeService"
 import HomeTop from "./HomeTop"
 import HomeVideo from "./HomeVideo"
 import { ThemeContext } from "../App"
-import FAQ from "./FAQ"
 import HomeFAQ from "./HomeFAQ"
 
 const Home = () => {

@@ -3,7 +3,6 @@ import { useContext, useState } from "react";
 import { ThemeContext } from "../App";
 import { useAuth } from "../auth";
 import { menuOptions } from "../utils";
-import Loading from "./Loading";
 import NavLogo from "./NavLogo";
 
 const Header = ({ setTheme }) => {

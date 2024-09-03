@@ -1,8 +1,10 @@
 
 const Photography = () => {
   return (
-    <div>Photography</div>
-  )
-}
+    <div className="check">
+     
+    </div>
+  );
+};
 
-export default Photography
+export default Photography;
